@@ -9,7 +9,7 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
     "render-build": "npm install && npm run build",
-    "lint": "eslint src --ext js,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "cd client and npm run lint",
     "test": "npx cypress run --browser electron",
     "test-component": "npx cypress run --component --browser electron --headless",
     "test-gui": "npx cypress open"
